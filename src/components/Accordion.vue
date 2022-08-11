@@ -14,7 +14,7 @@
   const index = ref(Accordion.count++);
 
   const isVisible = computed(() => {
-    return index.value === Accordion?.active;
+    return index.value === Accordion.active;
   });
 
   function open() {
@@ -26,7 +26,6 @@
   }
 
   function start(el: HTMLDivElement) {
-    console.log(typeof el);
     el.style.height = el.scrollHeight + 'px';
   }
 
