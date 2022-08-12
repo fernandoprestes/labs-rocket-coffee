@@ -35,7 +35,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="accordion">
     <button
       class="accordion-button"
       @click="open"
@@ -58,27 +58,18 @@
 </template>
 
 <style lang="scss" scoped>
-  .accordion-enter-active,
-  .accordion-leave-active {
-    overflow: hidden;
-    transition: height 0.3s ease, opacity 0.3s ease;
-    will-change: height, opacity;
-  }
+  .accordion {
+    font-family: var(--font-family-serif);
 
-  .accordion-enter-from,
-  .accordion-leave-to {
-    height: 0 !important;
-    opacity: 0;
-  }
-
-  .accordion-button {
-    width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    background: var(--color-card-header);
+    &-button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      background: var(--color-card-header);
+    }
   }
 </style>

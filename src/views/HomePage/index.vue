@@ -8,13 +8,13 @@
 <template>
   <main class="o-container">
     <Header />
-    <Accordion class="accordion">
+    <Accordion>
       <template #accordion-header> BRUNCH </template>
       <template #accordion-content>
         <CardListBranch />
       </template>
     </Accordion>
-    <Accordion class="accordion">
+    <Accordion>
       <template #accordion-header> DRINKS </template>
       <template #accordion-content>
         <CardListDrink />
@@ -22,9 +22,3 @@
     </Accordion>
   </main>
 </template>
-
-<style lang="scss" scoped>
-  .accordion {
-    font-family: var(--font-family-serif);
-  }
-</style>

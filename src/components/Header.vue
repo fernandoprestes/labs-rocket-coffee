@@ -1,10 +1,11 @@
-<script lang="ts" setup>
-  import Logo from './Logo.vue';
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <header class="header">
-    <Logo />
+    <img
+      src="logo.svg"
+      alt="logo da RocketCoffee"
+    />
     <p>Aberto todos os dias. 8h - 21h</p>
   </header>
 </template>

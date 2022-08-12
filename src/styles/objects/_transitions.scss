@@ -1,0 +1,12 @@
+.accordion-enter-active,
+.accordion-leave-active {
+  overflow: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  will-change: height, opacity;
+}
+
+.accordion-enter-from,
+.accordion-leave-to {
+  height: 0 !important;
+  opacity: 0;
+}
